@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "accounts.apps.AccountsConfig",
+    "rest_framework",
 ]
 
 MIDDLEWARE = [
@@ -95,6 +96,16 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 AUTH_USER_MODEL = "accounts.User"
+
+# Django REST Framework permissions
+# https://www.django-rest-framework.org/api-guide/permissions/
+
+REST_FRAMEWORK = {
+    "DEFAULT_PERMISSION_CLASSES": [
+        # API is only accessible to registered users.
+        "rest_framework.permissions.IsAuthenticated",
+    ]
+}
 
 
 # Internationalization
