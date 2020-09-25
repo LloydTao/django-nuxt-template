@@ -104,7 +104,8 @@ REST_FRAMEWORK = {
     "DEFAULT_PERMISSION_CLASSES": [
         # API is only accessible to registered users.
         "rest_framework.permissions.IsAuthenticated",
-    ]
+    ],
+    "TEST_REQUEST_DEFAULT_FORMAT": "json",
 }
 
 
