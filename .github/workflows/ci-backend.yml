@@ -33,7 +33,7 @@ jobs:
 
       - name: Lint backend
         working-directory: ${{ matrix.working-directory }}
-        run: black .
+        run: black . --check
 
       - name: Check for missing migrations
         working-directory: ${{ matrix.working-directory }}
