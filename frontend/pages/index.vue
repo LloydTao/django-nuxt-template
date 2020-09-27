@@ -1,26 +1,27 @@
 <template>
-  <div class="container">
+  <div>
     <div>
-      <Logo />
-      <h1 class="title">frontend</h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+      <TileMetric
+        title="Subscribers"
+        value="2543"
+        difference="375"
+        icon="fas fa-users"
+        colour="bg-blue-500"
+      />
+      <TileMetric
+        title="Likes"
+        value="0"
+        difference="0"
+        icon="fas fa-thumbs-up"
+        colour="bg-purple-500"
+      />
+      <TileMetric
+        title="Views"
+        value="43014"
+        difference="-17626"
+        icon="fas fa-play"
+        colour="bg-teal-500"
+      />
     </div>
   </div>
 </template>

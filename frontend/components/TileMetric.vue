@@ -1,6 +1,12 @@
 <template>
   <div>
-    <tile-metric />
+    <tile-metric
+      :title="title"
+      :value="value"
+      :difference="difference"
+      :icon="icon"
+      :colour="colour"
+    />
   </div>
 </template>
 
