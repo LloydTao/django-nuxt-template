@@ -28,7 +28,7 @@ export default {
       type: Number,
       default: 0,
     },
-    percentage: {
+    difference: {
       type: Number,
       default: 0,
     },
