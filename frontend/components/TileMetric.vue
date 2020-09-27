@@ -1,0 +1,45 @@
+<template>
+  <div>
+    <tile-metric />
+  </div>
+</template>
+
+<script>
+import TileMetricLoading from './TileMetricLoading.vue'
+import TileMetricError from './TileMetricError.vue'
+
+const TileMetric = () => ({
+  component: import('./TileMetricDefault.vue'),
+  delay: 100,
+  timeout: 3000,
+  loading: TileMetricLoading,
+  error: TileMetricError,
+})
+export default {
+  components: {
+    TileMetric,
+  },
+  props: {
+    title: {
+      type: String,
+      default: '',
+    },
+    value: {
+      type: Number,
+      default: 0,
+    },
+    percentage: {
+      type: Number,
+      default: 0,
+    },
+    icon: {
+      type: String,
+      default: '',
+    },
+    colour: {
+      type: String,
+      default: '',
+    },
+  },
+}
+</script>
